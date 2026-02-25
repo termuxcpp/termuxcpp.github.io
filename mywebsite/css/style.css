@@ -1,0 +1,16 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* 隐藏滚动条，防止页面出现滚动 */
+}
+#video {
+    position: fixed;      /* 固定定位，不随滚动移动 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* 保持视频比例，填满整个容器，可能会裁剪部分画面 */
+    /* 如果想完整显示视频（可能有黑边），用 contain */
+    /* object-fit: contain; */
+}
